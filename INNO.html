@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./INNO.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./flipdown.css" />
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <title>INNO_ROBOTS</title>
+</head>
+<body id="body">
+  <div id="loader" >
+		<div class="fond">
+		    <div class="logo">
+			    <img src="./elec .png" width="30%" height="30%">
+		    </div>
+		    <h3>INNO'ROBOTS</h3>
+		</div>
+  </div>
+  
+  <div class="content">
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="#home" id="navbar__logo"></a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Acceuil</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">A propos</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#time" class="navbar__links" id="time-sheet">Cahier de charge</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#sign-up" class="navbar__links" id="live-page">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="top" id="home">
+      <div id="particles-js">
+        <canvas class="particles-js-canvas-el" style="width:100%;height:100%;"></canvas>
+      </div>
+      <div id="section">
+        <div class="espace"></div>
+        <div class="header">
+          <h1>INNO' ROBOTS</h1><br>
+          <h2>Compétition robotique</h2><br><br>
+        </div>
+        <div id="flipdown" class="flipdown"></div>
+      </div>
+    </div>  
+    <div class="about" id="about">
+        <div class="contenair" data-aos="fade-right">
+          <div class="elec">
+            <img width="400" heigth="400" src="./elec .png">
+          </div>
+          <div class="elec">
+            <h3>Club Elec ENSIT </h3> 
+              <p>Elec est un club scientifique à but non lucratif fondé en 2004.Fier d'être le premier club de I'ENSIT, notre club accueille et accompagne les nouveaux étudiants, les aide à réaliser les premiers pas concrets vers le monde professionnel en développant leurs compétences en communication en interaction associative. 
+              Les activités de notre club se focalisent principalement sur la conception électronique et robotique, ce qui a pour but d'enrichir les connaissances de chaque membre et le pousser vers les défis par la participation dans les événements nationaux de robotique. Afin d'atteindre ces objectifs et renforcer nos activités, notre club a réussi, en 2021, à nouer des partenariats avec l'association INJAZ qui nous assure des formations soft skills ainsi que le club JCI Zaghouan El Medina à qui nous offrons des formations en électronique dédiées essentiellement aux écoliers.</p>
+          </div>
+        </div>
+        <div class="espace"></div>
+      <div class="contenair" data-aos="fade-right">
+        <div class="microsoft">
+          <h3>ENSIT Microsoft Club</h3> 
+          <p>EMC was founded in 2011 by Hamdi Abbar at the National High School of Tunis. It brings together people interested in sharing theirknowledge and helping each other in IT. It welcomes both beginners and 
+            experts. It aims to deepen your knowledge necessary in IT to be able to succeed in the professional field and allow students to use today'stechnology to prepare for the future</p>
+        </div>
+        <div class="microsoft">
+          <img width="400" heigth="400" src="./logo_microsoft.png" style="float: right;">
+        </div>
+      </div>
+    </div>
+    <div class="contact" id="sign-up">
+      <br> 
+      <br> 
+      <br> 
+    </div>
+
+    <div class="ancien">
+      <div class="part">
+        <p>EMC was founded in 2011 by Hamdi Abbar at the National High School of Tunis. It brings together people interested in sharing theirknowledge and helping each other in IT. It welcomes both beginners and 
+          experts. It aims to deepen your knowledge necessary in IT to be able to succeed in the prof</p>
+      </div>
+      <div class="part">
+        <div class="frame2"></div>
+        <div class="frame3"></div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <h1 style="text-align: center;">OUR SPONSORS</h1>
+      <div class="sponsors">
+        <div class="sponsor"> <img width="200" heigth="200" src="./logo_microsoft.png" ></div>
+        <div class="sponsor"><img width="200" heigth="200" src="./logo_microsoft.png" ></div>
+        <div class="sponsor"><img width="200" heigth="200" src="./logo_microsoft.png" ></div>
+        <div class="sponsor"><img width="200" heigth="200" src="./logo_microsoft.png" ></div>
+        <div class="sponsor"><img width="200" heigth="200" src="./logo_microsoft.png" ></div>
+      </div>
+    </div>
+
+  <form 
+    method="POST" 
+    action="https://script.google.com/macros/s/AKfycby-zuWJb2zz-iFBWiz8E-zS08TzNmsiJsJ7h7yAy8Hhlx_J7mwKPR7wi9wC-Yiu0ONu5w/exec"
+    onsubmit="event.defaultPrevented()"
+  >  
+    <input name="Email" type="email" placeholder="Email" required>
+    <input name="Name" type="text" placeholder="Name" required>
+    <input name="Email" type="email" placeholder="Email" required>
+    <input name="Name" type="text" placeholder="Name" required>
+    <button type="submit">Send</button>
+  </form>
+
+</div>
+
+
+    
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<script src="script.js"></script>
+<script src="./particles.js"></script>
+<script src="./app.js"></script>
+<script src="./flipdown.js" ></script>
+
+</body>
+</html>
