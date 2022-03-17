@@ -110,7 +110,7 @@
 }
 
 .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3):before {
-  content: '';
+
   position: absolute;
   bottom: 20px;
   left: 115px;
@@ -120,7 +120,7 @@
 }
 
 .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3):after {
-  content: '';
+  
   position: absolute;
   bottom: 50px;
   left: 115px;
@@ -202,7 +202,7 @@
 }
 
 .flipdown .rotor:after {
-  content: '';
+  
   z-index: 2;
   position: absolute;
   bottom: 0px;

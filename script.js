@@ -1,3 +1,4 @@
+
 AOS.init();
 if(body){
   body.classList.add("noscroll");
@@ -47,35 +48,38 @@ const highlightMenu = () => {
   const el = document.querySelector(".highlight");
   const homeMenu = document.querySelector("#home-page");
   const aboutMenu = document.querySelector("#about-page");
-  const timeMenu = document.querySelector("#time-sheet");
-  const liveMenu = document.querySelector("#live-page");
+  const cahierMenu = document.querySelector("#cahier-page");
+  const sponsMenu = document.querySelector("#sponsors-page")
   let scrollPos = window.scrollY;
   
   function reomveall(){
     homeMenu.classList.remove("highlight");
     aboutMenu.classList.remove("highlight"); 
-    timeMenu.classList.remove("highlight");
-    liveMenu.classList.remove("highlight");
+    cahierMenu.classList.remove("highlight");
+    sponsMenu.classList.remove("highlight");
    }
 
   // adds 'highlight' class to my menu items
   console.log(scrollPos)
   homeMenu.classList.add("highlight")
-  if (  scrollPos>0 && scrollPos < 550) {
+  if (  scrollPos>0 && scrollPos < 1200) {
     reomveall();
     homeMenu.classList.add("highlight");
     return;
-  } else if (scrollPos> 550 && scrollPos< 950) {
+  } else if (scrollPos> 1200 && scrollPos< 2260) {
     reomveall();
     aboutMenu.classList.add("highlight");
     return;
-  } else if (scrollPos> 950 && scrollPos < 1100) {
+  } else if (scrollPos> 2260 && scrollPos< 2930) {
     reomveall();
-    timeMenu.classList.add("highlight");
+    cahierMenu.classList.add("highlight");
     return;
-  } else if (scrollPos > 1100 && scrollPos < 2450) {
+  }else if (scrollPos > 2930 && scrollPos < 3600) {
     reomveall();
-    liveMenu.classList.add("highlight");
+    return;
+  }else if (scrollPos > 3600 && scrollPos < 4000) {
+    reomveall();
+    sponsMenu.classList.add("highlight");
     return;
   }
 
@@ -107,3 +111,26 @@ const hideMobileMenu = () => {
 
 menuLinks.addEventListener("click", hideMobileMenu);
 navLogo.addEventListener("click", hideMobileMenu);
+
+
+function validate() {
+  var nameey = document.getElementById("Nom").value ;
+  var prenom = document.getElementById("Prenom").value;
+  var email = document.getElementById("email").value ;
+  var team = document.getElementById("team").value ;
+  var gsm = document.getElementById("gsm").value ;
+  if(nameey!='' && prenom!='' && email!='' && team!='' && gsm !=''){  
+    alert("Enregistrement avec succés " +name + '!!');
+    setInterval(()=>{var nameey = document.getElementById("Nom").value ='';
+    var prenom = document.getElementById("Prenom").value = '';
+    var email = document.getElementById("email").value = '';
+    var team = document.getElementById("team").value = '';
+    var gsm = document.getElementById("gsm").value = '';
+    },500)
+    return
+
+  }
+  alert("Il faut remplir tous les champs " +name + '!!');
+
+
+}

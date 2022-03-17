@@ -2,7 +2,7 @@ body{
     margin:0px;
     background: rgb(15, 34, 32) !important;
     color: #fff !important;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -11,7 +11,25 @@ h1{
     font-size: 75px !important;
     letter-spacing: 0;
     text-transform: none;
-    font-weight: 700 !important;
+    font-weight: 900 !important;
+    font-weight: bold;
+}
+iframe{
+  width: 0;
+  height: 0;
+  display: none;
+}
+h2 {
+  font-size: 36px !important;
+  letter-spacing: 0;
+  text-transform: none;
+  font-weight: 500 !important;
+  
+}
+b{
+  color: #0F2220;
+  font-weight: 750 !important;
+
 }
 p{
   font-size: medium;
@@ -32,7 +50,7 @@ p{
     justify-content:center;
     align-items:center;
     height:100vh;
-    background:#0F2220;
+    background:#000;
 }
 #section:before {
     content: "";
@@ -69,19 +87,25 @@ h3{
     position: absolute;
     z-index: 0;
 }
+.footer{
+    padding: 100px 0 100px 0;
+}
 
 .top{
     margin-top: -80px;
     background-image: linear-gradient(rgba(15, 34, 32, 0.6),rgba(20, 85, 91, 0.4)),url("./bginno.png") !important;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat  ;
+    background-attachment: fixed;
 
 }
 .about{
-  padding: 80px 80px 80px 80px;
+  padding: 100px 0px 100px 0px ;
   display: flex;
   flex-direction: column;
-  
+  background-image: linear-gradient(rgba(15, 34, 32, 0.6),rgba(20, 85, 91, 0.4)),url("./Untitled-design-20.png") !important;
+  background-repeat: no-repeat  ;
+  background-attachment: fixed;
 }
 .contenair{
   display: flex;
@@ -103,8 +127,8 @@ h3{
     z-index: 11;
   }
   .navbar_onscoling {
-    background-color: #a3c4bc  !important;
-    height: 80px;
+    background-color: rgb(58, 120, 117)  !important;
+    height: 89px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -177,13 +201,12 @@ h3{
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #f2dda4;
-    background: -webkit-linear-gradient(to right, #6df37f, #f2dda4, #f2dda4);
-    background: linear-gradient(to right, #6df37f, #f2dda4, #f2dda4);
-    color: #fff;
+    background: rgb(244, 222, 147);
+    color: #000;
     transition: all 0.3s ease;
   }
   .ancien{
+    padding: 90px 0 90px 0;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -193,31 +216,38 @@ h3{
   .part{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
     width: 100vh;
-    height: 75vh;
+    height: 65vh;
   }
   .frame3{
-    padding: 10px;
     position: absolute;
-    width: 45%;
-    height: 45%;
-    top:10px;
-    background: url('./peplehall.jpg');
-    border-radius: 8px;
+    width: 30%;
+    height: 30%;
+    bottom: 90px;
+    background: linear-gradient(rgba(15, 34, 32, 0.2),rgba(20, 85, 91, 0.3)), url('./peplehall.jpg');
+    border-radius: 2px;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
   }
   .frame2{
-    padding: 10px;
     position: absolute;
-    width: 50%;
-    height: 50%;
-    bottom: 50px;
-    background: url('./people.jpg');
+    width: 40%;
+    height: 40%;
+    top: 110px;
+    right: 40px;
+    background: linear-gradient(rgba(15, 34, 32, 0.2),rgba(20, 85, 91, 0.3)), url('./people.jpg');
     background-size: cover;
+    background-position: center;
     border-radius: 8px;
+    z-index: 9;
+    box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
   }
   .sponsors{
+    padding: 50px 0 50px 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -227,19 +257,18 @@ h3{
   .sponsor{
     display: flex;
   }
+  .form{
+    display: flex !important;
+    padding: 50px 0 50px 0 !important;
+    background: #fff;
+    color: #000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .navbar__links:hover {
     color: #f2dda4;
     transition: all 0.3s ease;
-  }
-  .cahier{
-    padding:100px 0 100px 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.705),rgba(0,0,0,0.8)),url('./Untitled-design-20.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position:center;
-    background-size: cover;
-    background-color: #000;
-    height: fit-content;
   }
   @media screen and (max-width: 960px) {
     .navbar__container {

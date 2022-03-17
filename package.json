@@ -25,6 +25,7 @@
     "url": "https://github.com/VincentGarreau/particles.js/issues"
   },
   "dependencies": {
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "tailwindcss": "^3.0.23"
   }
 }

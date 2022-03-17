@@ -5,18 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./INNO.css">
+    <link rel="stylesheet" href="./tail.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./flipdown.css" />
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>INNO_ROBOTS</title>
 </head>
 <body id="body">
   <div id="loader" >
 		<div class="fond">
-		    <div class="logo">
-			    <img src="./elec .png" width="30%" height="30%">
+      <div class="all">
+        <div class="logo">
+			    <img src="./load_inno.png" width="100%" height="100%">
 		    </div>
-		    <h3>INNO'ROBOTS</h3>
+      </div>
+
 		</div>
   </div>
   
@@ -38,10 +42,13 @@
             <a href="#about" class="navbar__links" id="about-page">A propos</a>
           </li>
           <li class="navbar__item">
-            <a href="#time" class="navbar__links" id="time-sheet">Cahier de charge</a>
+            <a href="#cahier" class="navbar__links" id="cahier-page">Cahier de charge</a>
           </li>
           <li class="navbar__item">
-            <a href="#sign-up" class="navbar__links" id="live-page">Contact</a>
+            <a href="#sponsors" class="navbar__links" id="sponsors-page">Sponseurs</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="#sign-up" class="button" id="signup">Registre</a>
           </li>
         </ul>
       </div>
@@ -53,45 +60,20 @@
       <div id="section">
         <div class="espace"></div>
         <div class="header">
-          <h1>INNO' ROBOTS</h1><br>
+          <h1>INNO' <b>ROBOTS</b></h1><br>
           <h2>Compétition robotique</h2><br><br>
         </div>
         <div id="flipdown" class="flipdown"></div>
       </div>
     </div>  
-    <div class="about" id="about">
-        <div class="contenair" data-aos="fade-right">
-          <div class="elec">
-            <img width="400" heigth="400" src="./elec .png">
-          </div>
-          <div class="elec">
-            <h3>Club Elec ENSIT </h3> 
-              <p>Elec est un club scientifique à but non lucratif fondé en 2004.Fier d'être le premier club de I'ENSIT, notre club accueille et accompagne les nouveaux étudiants, les aide à réaliser les premiers pas concrets vers le monde professionnel en développant leurs compétences en communication en interaction associative. 
-              Les activités de notre club se focalisent principalement sur la conception électronique et robotique, ce qui a pour but d'enrichir les connaissances de chaque membre et le pousser vers les défis par la participation dans les événements nationaux de robotique. Afin d'atteindre ces objectifs et renforcer nos activités, notre club a réussi, en 2021, à nouer des partenariats avec l'association INJAZ qui nous assure des formations soft skills ainsi que le club JCI Zaghouan El Medina à qui nous offrons des formations en électronique dédiées essentiellement aux écoliers.</p>
-          </div>
-        </div>
-        <div class="espace"></div>
-      <div class="contenair" data-aos="fade-right">
-        <div class="microsoft">
-          <h3>ENSIT Microsoft Club</h3> 
-          <p>EMC was founded in 2011 by Hamdi Abbar at the National High School of Tunis. It brings together people interested in sharing theirknowledge and helping each other in IT. It welcomes both beginners and 
-            experts. It aims to deepen your knowledge necessary in IT to be able to succeed in the professional field and allow students to use today'stechnology to prepare for the future</p>
-        </div>
-        <div class="microsoft">
-          <img width="400" heigth="400" src="./logo_microsoft.png" style="float: right;">
-        </div>
-      </div>
-    </div>
-    <div class="contact" id="sign-up">
-      <br> 
-      <br> 
-      <br> 
-    </div>
-
     <div class="ancien">
       <div class="part">
-        <p>EMC was founded in 2011 by Hamdi Abbar at the National High School of Tunis. It brings together people interested in sharing theirknowledge and helping each other in IT. It welcomes both beginners and 
-          experts. It aims to deepen your knowledge necessary in IT to be able to succeed in the prof</p>
+        <div style="width: 80%;margin: auto;">
+          <h1>Bienvenue :</h1><br>
+          <p>Vous êtes doué par la robotique, intéressé par toute sorte d'innovation et vous souhaitez élargir votre réseau professionnel et faire partie de notre grand événement?
+            C'est le bon moment où  Innorobots vous propose dans sa 6ème édition, organisée par Club Elec ENSIT en collaboration avec ENSIT Microsoft Club , une expérience exceptionnelle inspirée par le fameux jeu “ League Of Legends “.
+            C'est la meilleure occasion pour les passionnés de la robotique qui peuvent acquérir et mettre en pratique leurs compétences.</p>   
+        </div>
       </div>
       <div class="part">
         <div class="frame2"></div>
@@ -99,8 +81,116 @@
       </div>
     </div>
 
-    <div class="footer">
-      <h1 style="text-align: center;">OUR SPONSORS</h1>
+    <div class="about" id="about">
+      <div class="contenair" data-aos="fade-right">
+      </div>
+        <div class="contenair" data-aos="fade-right">
+          <div class="elec">
+            <img width="400" heigth="400" src="./elec .png">
+          </div>
+          <div class="elec" >
+            <div style="width: 80%;margin: auto;">
+              <h2>Club Elec ENSIT </h2> <br>    
+              <p>Elec est un club scientifique à but non lucratif fondé en 2004.Fier d'être le premier club de I'ENSIT, notre club accueille et accompagne les nouveaux étudiants, les aide à réaliser les premiers pas concrets vers le monde professionnel en développant leurs compétences en communication en interaction associative. 
+              Les activités de notre club se focalisent principalement sur la conception électronique et robotique, ce qui a pour but d'enrichir les connaissances de chaque membre et le pousser vers les défis par la participation dans les événements nationaux de robotique. Afin d'atteindre ces objectifs et renforcer nos activités, notre club a réussi, en 2021, à nouer des partenariats avec l'association INJAZ qui nous assure des formations soft skills ainsi que le club JCI Zaghouan El Medina à qui nous offrons des formations en électronique dédiées essentiellement aux écoliers.</p>
+            </div>
+          </div>
+        </div>
+        <div class="espace"></div>
+      <div class="contenair" data-aos="fade-right">
+        <div class="microsoft">
+          <div style="width: 80%;margin: auto;">
+            <h2>ENSIT Microsoft Club</h2> <br>
+            <p>Louay Tanazefti
+              ENSIT Microsoft Club est un club scientifique à but non lucratif qui a été fondé en 2011 par Hamdi Abbar au Lycée National de Tunis. Il rassemble des personnes intéressées à partager leurs connaissances et à s’entraider dans l’informatique. Il accueille aussi bien les débutants que les experts. Il vise à approfondir vos connaissances nécessaires en informatique pour pouvoir réussir dans le domaine professionnel et permettre aux étudiants d’utiliser la technologie d’aujourd’hui pour se préparer à l’avenir.</p>
+          </div>
+        </div>
+        <div class="microsoft">
+          <img width="400" heigth="400" src="./logo_microsoft.png" style="float: right;">
+        </div>
+      </div>
+    </div>
+
+    <div class="cahier" id="cahier">
+      <div class="ti"><h2>Cahiers de charge</h2></div>
+      <br><br>
+        <div class="cahiers">
+          <div class="card 1">
+            <div class="card_image"> <img src="./robotics.jpg" /> </div>
+            <div class="card_title title-white">
+              <p>Card Title</p>
+            </div>
+          </div>
+          
+          <div class="card 3">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/10SvWCbt1ytWCc/giphy.gif" />
+            </div>
+            <div class="card_title">
+              <p>Card Title</p>
+            </div>
+          </div>
+            
+          <div class="card 4">
+            <div class="card_image">
+              <img src="https://media.giphy.com/media/LwIyvaNcnzsD6/giphy.gif" />
+            </div>
+            <div class="card_title title-black">
+              <p>Card Title</p>
+            </div>
+          </div>
+          
+        </div>
+    </div>
+
+    <div class="form" id="sign-up">
+      <div class="signupSection">
+          <div class="info">
+            <h2>Participer maintenant</h2>
+            <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
+            <br>
+            <p>Merci de remplir vos coordonnées<br>NB:Frais d'inscription est 50 par équipe</p>
+          </div>
+          <form 
+          target="frame"
+          method="POST" 
+          action="https://script.google.com/macros/s/AKfycby-zuWJb2zz-iFBWiz8E-zS08TzNmsiJsJ7h7yAy8Hhlx_J7mwKPR7wi9wC-Yiu0ONu5w/exec"
+          onsubmit="validate()"
+          class="signupForm" name="signupform">
+
+            <h2>Registre</h2>
+            <ul class="noBullet">
+              <li>
+                <label for="Nom"></label>
+                <input type="text" class="inputFields" id="Nom" name="Nom" placeholder="Nom " value=""  required/>
+              </li>
+              <li>
+                  <label for="Prenom"></label>
+                  <input type="text" class="inputFields" id="Prenom" name="Prenom" placeholder="Prénom" value=""  required/>
+                </li>
+              <li>
+                <label for="email"></label>
+                <input type="email" class="inputFields" id="email" name="email" placeholder="Email" value="" required/>
+              </li>
+              <li>
+                  <label for="team"></label>
+                  <input type="team" class="inputFields" id="team" name="team" placeholder="nom de l'équipe" value="" required/>
+              </li>
+              <li>
+                  <label for="gsm"></label>
+                  <input type="gsm" class="inputFields" id="gsm" name="gsm" placeholder="gsm" value="" required/>
+              </li>
+  
+              <li id="center-btn">
+                <input type="submit" id="join-btn" name="join" alt="Join" value="Join" >
+              </li>
+            </ul>
+          </form>
+        </div>
+    </div>
+      
+    <div class="footer" id="sponsors">
+      <h1 style="text-align: center;">NOS SPONSEURS</h1>
       <div class="sponsors">
         <div class="sponsor"> <img width="200" heigth="200" src="./logo_microsoft.png" ></div>
         <div class="sponsor"><img width="200" heigth="200" src="./logo_microsoft.png" ></div>
@@ -109,23 +199,49 @@
         <div class="sponsor"><img width="200" heigth="200" src="./logo_microsoft.png" ></div>
       </div>
     </div>
-
-  <form 
-    method="POST" 
-    action="https://script.google.com/macros/s/AKfycby-zuWJb2zz-iFBWiz8E-zS08TzNmsiJsJ7h7yAy8Hhlx_J7mwKPR7wi9wC-Yiu0ONu5w/exec"
-    onsubmit="event.defaultPrevented()"
-  >  
-    <input name="Email" type="email" placeholder="Email" required>
-    <input name="Name" type="text" placeholder="Name" required>
-    <input name="Email" type="email" placeholder="Email" required>
-    <input name="Name" type="text" placeholder="Name" required>
-    <button type="submit">Send</button>
-  </form>
-
-</div>
-
-
     
+  </div>
+  <footer  id="contact">
+    <span class="col">
+        <img class="col-title" src="./inno--logo.png" width="45%">
+    </span>
+    <span class="col">
+      <h3 class="social-col-title">Informations</h3>
+      <nav class="col-list">
+        <ul>
+          <li><p><br></p></li>
+          <li><p>
+            INNO'Robots est un évènement national annuel
+          </p></li>
+          <li> <p>Email: mhoussem789@gmail.com</p></li>
+          <li><p>Téléphone: +216 52 225 375</p></li>
+          <li><p>Copyright &copy; 2022 - ELEC - EMC </p></li>
+        </ul>
+      </nav>
+    </span>
+    <span class="col">
+      <div class="social-media">
+        <h3 class="social-col-title">Follow us</h3>
+        <ul class="social-media-list">
+          <li><a href="https://www.facebook.com/INNOROBOTS" class="facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+              </svg></a></li>
+          <li><a href="https://www.facebook.com/ElecEnsitClub" class="twitter"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+              </svg></a></li>
+          <li><a href="https://www.facebook.com/EnsitMicrosoftClub" class="instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+              </svg></a></li>
+        </ul>
+      </div>
+      <a href="#home"><img class="col-title" src="./levelup.png" style="float: right;"></a>
+    </span>
+      
+  
+  </footer>   
+
+
+  <iframe name="frame"></iframe>
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <script src="script.js"></script>
 <script src="./particles.js"></script>
