@@ -12,8 +12,8 @@ app.get('/', function(req,res){
     res.sendFile(__dirname + '/INNO/INNO.html');
 });
 
-var server = app.listen(80, function(){
+const port = process.env.PORT || '5000';
+var server = app.listen(port, function(){
     var port = server.address().port;
-    var host = server.address().host;
-    console.log("Server started at http://%s:%s", host, port);
+    console.log("Server started at http://localhost:%s", port);
 });
