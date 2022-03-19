@@ -112,6 +112,9 @@ const hideMobileMenu = () => {
 menuLinks.addEventListener("click", hideMobileMenu);
 navLogo.addEventListener("click", hideMobileMenu);
 
+function addUser() {
+  console.log("addUser");
+}
 
 function validate() {
   var nameey = document.getElementById("Nom").value ;
@@ -120,17 +123,18 @@ function validate() {
   var team = document.getElementById("team").value ;
   var gsm = document.getElementById("gsm").value ;
   if(nameey!='' && prenom!='' && email!='' && team!='' && gsm !=''){  
-    alert("Enregistrement avec succés " +name + '!!');
-    setInterval(()=>{var nameey = document.getElementById("Nom").value ='';
-    var prenom = document.getElementById("Prenom").value = '';
-    var email = document.getElementById("email").value = '';
-    var team = document.getElementById("team").value = '';
-    var gsm = document.getElementById("gsm").value = '';
-    },500)
-    return
+    alert("Enregistrement avec succés " + nameey + '!!');
+    var timer = setInterval(() => {
+      document.getElementById("Nom").value = '';
+      var prenom = document.getElementById("Prenom").value = '';
+      var email = document.getElementById("email").value = '';
+      var team = document.getElementById("team").value = '';
+      var gsm = document.getElementById("gsm").value = '';
+    }, 500);
 
+    return;
   }
-  alert("Il faut remplir tous les champs " +name + '!!');
-
-
+  
+  clearInterval(timer);
+  alert("Il faut remplir tous les champs " + nameey + '!!');
 }
