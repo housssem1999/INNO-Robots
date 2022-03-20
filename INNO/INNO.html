@@ -13,16 +13,10 @@
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
 </head>
 <body id="body">
-  <div id="loader" >
-		<div class="fond">
-      <div class="all">
-        <div class="logo">
-			    <img src="./img/load_inno.png" width="100%" height="100%">
-		    </div>
-      </div>
-
-		</div>
+  <div id="loader">
+    <div class="fond"></div>
   </div>
+
   <div class="content">
     <nav class="navbar">
       <div class="navbar__container">
@@ -117,7 +111,7 @@
           <div class="card 1">
             <div class="card_image"> <img src="./img/robotics.jpg" /> </div>
             <div class="card_title title-white">
-              <p>Card Title</p>
+              <a href="./Untitled.pdf" target="_blank">Card Title</a>
             </div>
           </div>
           
@@ -148,37 +142,71 @@
             <h2>Participer maintenant</h2>
             <i class="icon ion-ios-ionic-outline" aria-hidden="true"></i>
             <br>
-            <p>Merci de remplir vos coordonnées<br>NB:Frais d'inscription est 50 par équipe</p>
+            <!--            <p>Merci de remplir vos coordonnées<br>NB:Frais d'inscription est 50 par équipe</p>-->
+
           </div>
           <form 
+          id="frm"
           target="frame"
           method="POST" 
-          action="https://script.google.com/macros/s/AKfycby-zuWJb2zz-iFBWiz8E-zS08TzNmsiJsJ7h7yAy8Hhlx_J7mwKPR7wi9wC-Yiu0ONu5w/exec"
           onsubmit="validate()"
           class="signupForm" name="signupform">
 
             <h2>Registre</h2>
             <ul class="noBullet">
               <li>
-                <label for="Nom"></label>
-                <input type="text" class="inputFields" id="Nom" name="Nom" placeholder="Nom " value=""  required/>
+                <label for="School"></label>
+                <input type="text" class="inputFields" id="School" name="School" placeholder="Ecole " value=""  required/>
               </li>
               <li>
-                  <label for="Prenom"></label>
-                  <input type="text" class="inputFields" id="Prenom" name="Prenom" placeholder="Prénom" value=""  required/>
-                </li>
+                <label for="team"></label>
+                <input type="text" class="inputFields" id="team" name="Team" placeholder="Nom de l'équipe" value="" required/>
+            </li>
               <li>
-                <label for="email"></label>
-                <input type="email" class="inputFields" id="email" name="email" placeholder="Email" value="" required/>
+                <label for="Captain"></label>
+                <input type="text" class="inputFields" id="Captain" name="Captain" placeholder="Capitain " value=""  required/>
+              </li> 
+              <li>
+              <label for="email"></label>
+              <input type="email" class="inputFields" id="email" name="Email" placeholder="Email" value="" required/>
+            </li>
+            <li>
+                <label for="gsm"></label>
+                <input type="gsm" class="inputFields" id="gsm" name="gsm" placeholder="GSM" value="" required/>
+            </li>
+              <li>
+                <label for="first"></label>
+                <input type="text" class="inputFields" id="first" name="first" placeholder="1er membre " value=""  required/>
               </li>
               <li>
-                  <label for="team"></label>
-                  <input type="team" class="inputFields" id="team" name="team" placeholder="Nom de l'équipe" value="" required/>
+                <label for="second"></label>
+                <input type="text" class="inputFields" id="second" name="second" placeholder="2eme membre " value=""  required/>
               </li>
-              <li>
-                  <label for="gsm"></label>
-                  <input type="gsm" class="inputFields" id="gsm" name="gsm" placeholder="GSM" value="" required/>
-              </li>
+              <br>
+              <label for="type">Type de competition</label>
+              <li id="radio">
+              <br>
+              <div class="div">
+                <input type="radio" class="inputFields" id="type1" name="type"  value="Suiveur:howling abyss" />
+                <label for="Suiveur">Suiveur: howling abyss</label>
+              
+              </div>
+              <div class="div">
+                <input type="radio" class="inputFields" id="type2" name="type"  value="Tout terrain:summoner's rift" />
+                <label for="Tout">Tout terrain: summoner's rift</label>
+              
+              </div>
+              <div class="div">
+                <input type="radio" class="inputFields" id="type3" name="type"  value="Sumo:crystal scar" />
+                <label for="Sumo">Sumo: crystal scar</label>
+              
+              </div>
+              <div class="div">
+                <input type="radio" class="inputFields" id="type4" name="type"  value="Junior:twisted treeline" />
+                <label for="Junior">Junior: twisted treeline</label>
+                <br> 
+              </div>
+            </li>
   
               <li id="center-btn">
                 <input type="submit" id="join-btn" name="join" alt="Join" value="Join" >
@@ -188,18 +216,17 @@
         </div>
     </div>
       
-    <div class="footer" id="sponsors">
+    <!--<div class="footer" id="sponsors">
       <h1 style="text-align: center;">NOS SPONSEURS</h1>
       <div class="sponsors">
         <div class="sponsor"> <img width="200" heigth="200" src="./img/logo_microsoft.png" ></div>
         <div class="sponsor"><img width="200" heigth="200" src="./img/logo_microsoft.png" ></div>
         <div class="sponsor"><img width="200" heigth="200" src="./img/logo_microsoft.png" ></div>
         <div class="sponsor"><img width="200" heigth="200" src="./img/logo_microsoft.png" ></div>
-        <div class="sponsor"><img width="200" heigth="200" src="./img/logo_microsoft.png" ></div>
       </div>
     </div>
     
-  </div>
+  </div>-->
   <footer  id="contact">
     <span class="col">
         <img class="col-title" src="./img/inno--logo.png" width="45%">

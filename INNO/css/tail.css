@@ -4,7 +4,7 @@
   background: url('../img/lol.jpg');
   background-repeat: no-repeat;
   width: 800px;
-  height: 600px;
+  height: 1000px;
   text-align: center;
   display: flex;
   color: white;
@@ -160,7 +160,7 @@ footer ul {
   flex-direction: column;
 
   padding:100px 0 100px 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.705),rgba(0,0,0,0.8)),url('../img/purple.png');
+  background-image: linear-gradient(#34b1a4, #0F2220);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position:center;

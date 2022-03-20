@@ -6,7 +6,7 @@ if(body){
 function wait(){
   window.setTimeout(function(){
       loadNow(1);
-    }, 1000);
+    }, 500);
 }
 
 function loadNow(opacity){
@@ -62,11 +62,11 @@ const highlightMenu = () => {
   // adds 'highlight' class to my menu items
   console.log(scrollPos)
   homeMenu.classList.add("highlight")
-  if (  scrollPos>0 && scrollPos < 1200) {
+  if (  scrollPos>0 && scrollPos < 1195) {
     reomveall();
     homeMenu.classList.add("highlight");
     return;
-  } else if (scrollPos> 1200 && scrollPos< 2260) {
+  } else if (scrollPos> 1195 && scrollPos< 2260) {
     reomveall();
     aboutMenu.classList.add("highlight");
     return;
@@ -121,12 +121,26 @@ function addUser() {
 }
 
 function validate() {
-  var name = document.getElementById("Nom").value ;
-  var prenom = document.getElementById("Prenom").value;
+  var school = document.getElementById("School").value ;
+  var team = document.getElementById("team").value;
+  var capitain = document.getElementById("Captain").value ;
   var email = document.getElementById("email").value ;
-  var team = document.getElementById("team").value ;
+  var first = document.getElementById("first").value ;
+  var second = document.getElementById("second").value ;
   var gsm = document.getElementById("gsm").value ;
-  if(name !="" && prenom!=""&& email!=""&& team!=""&& gsm !=""){ 
-    alert("Enregistrement avec succés " + name + '!!');
+  var radios = document.getElementsByName("type");
+  var formValid = false;
+  var i = 0;
+  while (!formValid && i < radios.length) {
+      if (radios[i].checked) formValid = true;
+      i++;        
+  }
+  if(school !="" && capitain!=""&& email!=""&& team!=""&& gsm !="" && first!=''&& 
+  second!='' && formValid){ 
+    alert("Enregistrement avec succés " + capitain + '!!');
+    var frm = document.getElementById('frm')
+    frm.action ="https://script.google.com/macros/s/AKfycby-zuWJb2zz-iFBWiz8E-zS08TzNmsiJsJ7h7yAy8Hhlx_J7mwKPR7wi9wC-Yiu0ONu5w/exec"
+  }else{
+    alert("Remplir tous les champs " + capitain + '!!');
   }
 }
