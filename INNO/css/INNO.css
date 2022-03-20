@@ -52,6 +52,19 @@ p{
     height:100vh;
     background:#000;
 }
+.content{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.bienvenue{
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #section:before {
     content: "";
     position: absolute;
@@ -119,6 +132,10 @@ h3{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+}
+.txt{
+  width: 80%;
+  margin: auto;
 }
 .microsoft, .elec{
   width: 50%;
@@ -386,7 +403,88 @@ h3{
       transform: translateY(-8px) rotate(-45deg);
     }
 
-
+    .ancien{
+      padding: 90px 0 90px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+    }
+    .part{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100vh;
+      height: 65vh;
+    }
+    .frame3{
+      position: absolute;
+      width: 50%;
+      height: 25%;
+      bottom: 30px;
+      left: 30px;
+      z-index: 9;
+      background: linear-gradient(rgba(15, 34, 32, 0.2),rgba(20, 85, 91, 0.3)), url(../img/peplehall.jpg);
+      border-radius: 2px;
+      background-size: 130%;
+      background-position: center;
+      background-repeat: no-repeat;
+      box-shadow: 3px 10px 20px 5px rgb(0 0 0 / 50%);
+    }
+    .frame2{
+      position: absolute;
+      width: 70%;
+      height: 30%;
+      top: 500px;
+      background: linear-gradient(rgba(15, 34, 32, 0.2),rgba(20, 85, 91, 0.3)), url(../img/people.jpg);
+      background-size: 120%;
+      background-position: center;
+      border-radius: 8px;
+      z-index: 9;
+      box-shadow: 3px 10px 20px 5px rgb(0 0 0 / 50%);
+    }
+    .contenair{
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 0 20px 0;
+    }
+    .elec{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .microsoft{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .info{
+      display: none;
+    }
+    .signupForm{
+      display: flex;
+      flex-direction: column;
+      width: 100% !important;
+    }
+    footer{
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+    }
+    .bienvenue {
+      display: flex;
+      width: 60%;
+      height: 100%;
+      /* margin: auto; */
+      flex-direction: column;
+      align-items: flex-start;
+  }
     /*.content,#contact { display: none; }
   */
 }
