@@ -362,9 +362,8 @@ h3{
     #mobile-menu.is-active .bar:nth-child(3) {
       transform: translateY(-8px) rotate(-45deg);
     }
-
+    .content,#contact { display: none; }
   }
   .highlight {
     border-bottom: 4px solid #f2dda4;
   }
-  

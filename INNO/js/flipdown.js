@@ -412,7 +412,7 @@ function appendChildren(parent, children) {
     parent.appendChild(el);
   });
 }
-var flipdown = new FlipDown(1647897685)
+var flipdown = new FlipDown(1649494800)
 flipdown.start()
 flipdown.ifEnded(() => {
   console.log('The countdown has ended!');

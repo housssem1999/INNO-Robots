@@ -1,9 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
-
 .signupSection {
   display: flex;
   flex-direction: row;
-  background: url(https://source.unsplash.com/TV2gg2kZD1o/1600x800);
+  background: url('../img/lol.jpg');
   background-repeat: no-repeat;
   width: 800px;
   height: 600px;
@@ -240,6 +238,7 @@ footer ul {
 
 
 .info {
+  background: #1c2444 !important;
   width: 45%;
   background: rgba(20, 20, 20, .8);
   padding: 30px 30px;

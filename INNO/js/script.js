@@ -103,9 +103,13 @@ window.addEventListener("click", highlightMenu);
 //  Close mobile Menu when clicking on a menu item
 const hideMobileMenu = () => {
   const menuBars = document.querySelector(".is-active");
-  if (window.innerWidth <= 768 && menuBars) {
-    menu.classList.toggle("is-active");
-    menuLinks.classList.remove("active");
+  if (window.innerWidth <= 960 && menuBars) {
+    //menu.classList.toggle("is-active");
+    //menuLinks.classList.remove("active");
+    let myElm = document.createElement("p");
+    myElm.innerText = 'test';	
+    myElm.style.color = 'red';		
+    document.body.appendChild(myElm);
   }
 };
 
@@ -117,24 +121,12 @@ function addUser() {
 }
 
 function validate() {
-  var nameey = document.getElementById("Nom").value ;
+  var name = document.getElementById("Nom").value ;
   var prenom = document.getElementById("Prenom").value;
   var email = document.getElementById("email").value ;
   var team = document.getElementById("team").value ;
   var gsm = document.getElementById("gsm").value ;
-  if(nameey!='' && prenom!='' && email!='' && team!='' && gsm !=''){  
-    alert("Enregistrement avec succés " + nameey + '!!');
-    var timer = setInterval(() => {
-      document.getElementById("Nom").value = '';
-      var prenom = document.getElementById("Prenom").value = '';
-      var email = document.getElementById("email").value = '';
-      var team = document.getElementById("team").value = '';
-      var gsm = document.getElementById("gsm").value = '';
-    }, 500);
-
-    return;
+  if(name !="" && prenom!=""&& email!=""&& team!=""&& gsm !=""){ 
+    alert("Enregistrement avec succés " + name + '!!');
   }
-  
-  clearInterval(timer);
-  alert("Il faut remplir tous les champs " + nameey + '!!');
 }
