@@ -100,8 +100,9 @@ h3{
 
 }.fond{
   background-image: url("../img/load-inno.png");
-  background-size: cover;
+  background-size: 99%;
   background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
 }
@@ -274,6 +275,7 @@ h3{
     justify-content: center;
   }
   #radio{
+    margin-left: 80px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -282,6 +284,15 @@ h3{
     color: #f2dda4;
     transition: all 0.3s ease;
   }
+  .highlight {
+    border-bottom: 4px solid #f2dda4;
+  }
+
+
+
+
+
+  /*mobile*/
   @media screen and (max-width: 960px) {
     .navbar__container {
       display: flex;
@@ -374,8 +385,9 @@ h3{
     #mobile-menu.is-active .bar:nth-child(3) {
       transform: translateY(-8px) rotate(-45deg);
     }
-    .content,#contact { display: none; }
-  }
-  .highlight {
-    border-bottom: 4px solid #f2dda4;
-  }
+
+
+    /*.content,#contact { display: none; }
+  */
+}
+

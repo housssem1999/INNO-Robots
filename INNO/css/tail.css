@@ -278,6 +278,11 @@ footer ul {
   color: white;
   outline: none;
 }
+.radio_fields{
+  font-size: 16px;
+  padding: 10px;
+  width: 80px;
+}
 
 .noBullet {
   list-style-type: none;

@@ -6,7 +6,7 @@ if(body){
 function wait(){
   window.setTimeout(function(){
       loadNow(1);
-    }, 500);
+    }, 3000);
 }
 
 function loadNow(opacity){
