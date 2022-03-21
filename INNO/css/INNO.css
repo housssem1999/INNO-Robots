@@ -29,7 +29,6 @@ h2 {
 b{
   color: #0F2220;
   font-weight: 750 !important;
-
 }
 p{
   font-size: medium;
@@ -43,7 +42,7 @@ p{
     position:fixed;
     z-index:99;
     overflow-y: hidden;
-    width:100%;
+    width: 100%;
     margin:0;
     padding:0;
     display:flex;
@@ -123,6 +122,7 @@ h3{
   padding: 100px 0px 100px 0px ;
   display: flex;
   flex-direction: column;
+  background-position: center;
   background-image: linear-gradient(rgba(15, 34, 32, 0.6),rgba(20, 85, 91, 0.4)),url("../img/bg_about.jpg") !important;
   background-size: cover;
   background-repeat: no-repeat  ;
@@ -311,7 +311,7 @@ h3{
 
   /*mobile*/
   @media screen and (max-width: 960px) {
-    .navbar__container {
+    .navbar__content {
       display: flex;
       justify-content: space-between;
       height: 80px;
@@ -404,46 +404,47 @@ h3{
     }
 
     .ancien{
-      padding: 90px 0 90px 0;
+      padding: 0px 0 0px 0;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      position: relative;
+      justify-content: space-around;
+      height: 150vh;
     }
     .part{
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 100vh;
-      height: 65vh;
+      width: 100%;
+      height: 43vh;
     }
-    .frame3{
+    .frame3 {
       position: absolute;
       width: 50%;
-      height: 25%;
-      bottom: 30px;
+      height: 14%;
+      bottom: 146px;
       left: 30px;
       z-index: 9;
       background: linear-gradient(rgba(15, 34, 32, 0.2),rgba(20, 85, 91, 0.3)), url(../img/peplehall.jpg);
-      border-radius: 2px;
+      border-radius: 8px;
       background-size: 130%;
       background-position: center;
       background-repeat: no-repeat;
       box-shadow: 3px 10px 20px 5px rgb(0 0 0 / 50%);
-    }
-    .frame2{
-      position: absolute;
-      width: 70%;
-      height: 30%;
-      top: 500px;
-      background: linear-gradient(rgba(15, 34, 32, 0.2),rgba(20, 85, 91, 0.3)), url(../img/people.jpg);
-      background-size: 120%;
-      background-position: center;
-      border-radius: 8px;
-      z-index: 9;
-      box-shadow: 3px 10px 20px 5px rgb(0 0 0 / 50%);
-    }
+  }
+  .frame2 {
+    position: absolute;
+    width: 60%;
+    height: 16%;
+    top: 641px;
+    background: linear-gradient(rgba(15, 34, 32, 0.2),rgba(20, 85, 91, 0.3)), url(../img/people.jpg);
+    background-size: 130%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 8px;
+    z-index: 9;
+    box-shadow: 3px 10px 20px 5px rgb(0 0 0 / 50%);
+}
     .contenair{
       width: 90%;
       display: flex;
@@ -479,7 +480,7 @@ h3{
     }
     .bienvenue {
       display: flex;
-      width: 60%;
+      width: 80% !important;
       height: 100%;
       /* margin: auto; */
       flex-direction: column;
@@ -488,4 +489,3 @@ h3{
     /*.content,#contact { display: none; }
   */
 }
-
