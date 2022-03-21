@@ -49,44 +49,55 @@ const highlightMenu = () => {
   const homeMenu = document.querySelector("#home-page");
   const aboutMenu = document.querySelector("#about-page");
   const cahierMenu = document.querySelector("#cahier-page");
-  const sponsMenu = document.querySelector("#sponsors-page")
   let scrollPos = window.scrollY;
   
   function reomveall(){
     homeMenu.classList.remove("highlight");
     aboutMenu.classList.remove("highlight"); 
     cahierMenu.classList.remove("highlight");
-    sponsMenu.classList.remove("highlight");
    }
 
   // adds 'highlight' class to my menu items
   console.log(scrollPos)
   homeMenu.classList.add("highlight")
-  if (  scrollPos>0 && scrollPos < 1195) {
-    reomveall();
-    homeMenu.classList.add("highlight");
-    return;
-  } else if (scrollPos> 1195 && scrollPos< 2260) {
-    reomveall();
-    aboutMenu.classList.add("highlight");
-    return;
-  } else if (scrollPos> 2260 && scrollPos< 2930) {
-    reomveall();
-    cahierMenu.classList.add("highlight");
-    return;
-  }else if (scrollPos > 2930 && scrollPos < 3600) {
-    reomveall();
-    return;
-  }else if (scrollPos > 3600 && scrollPos < 4000) {
-    reomveall();
-    sponsMenu.classList.add("highlight");
-    return;
+  if(window.innerWidth > 960){
+    if (  scrollPos>0 && scrollPos < 1195) {
+      reomveall();
+      homeMenu.classList.add("highlight");
+      return;
+    } else if (scrollPos> 1195 && scrollPos< 2150) {
+      reomveall();
+      aboutMenu.classList.add("highlight");
+      return;
+    } else if (scrollPos> 2150 && scrollPos< 2930) {
+      reomveall();
+      cahierMenu.classList.add("highlight");
+      return;
+    }else if (scrollPos > 2930 && scrollPos < 3600) {
+      reomveall();
+      return;
+    }
   }
-
-  if ((el && window.innerWidth < 960 && scrollPos < 600) || el) {
-    el.classList.remove("highlight");
+  else{
+    if (scrollPos>0 && scrollPos < 1600) {
+      reomveall();
+      homeMenu.classList.add("highlight");
+      return;
+    } else if (scrollPos> 1600 && scrollPos< 3190) {
+      reomveall();
+      aboutMenu.classList.add("highlight");
+      return;
+    } else if (scrollPos> 3190 && scrollPos< 4680) {
+      reomveall();
+      cahierMenu.classList.add("highlight");
+      return;
+    }else if (scrollPos > 4680 && scrollPos < 6000) {
+      reomveall();
+      return;
+    }
+    
+    }
   }
-};
 
 window.addEventListener("scroll", highlightMenu);
 window.addEventListener("scroll", ()=>{
@@ -104,12 +115,8 @@ window.addEventListener("click", highlightMenu);
 const hideMobileMenu = () => {
   const menuBars = document.querySelector(".is-active");
   if (window.innerWidth <= 960 && menuBars) {
-    //menu.classList.toggle("is-active");
-    //menuLinks.classList.remove("active");
-    let myElm = document.createElement("p");
-    myElm.innerText = 'test';	
-    myElm.style.color = 'red';		
-    document.body.appendChild(myElm);
+    menu.classList.toggle("is-active");
+    menuLinks.classList.remove("active");
   }
 };
 

@@ -238,7 +238,7 @@ footer ul {
 
 
 .info {
-  background: #1c2444 !important;
+  background: #0F2220 !important;
   width: 45%;
   background: rgba(20, 20, 20, .8);
   padding: 30px 30px;
@@ -274,7 +274,7 @@ footer ul {
   border-top: none;
   border-left: none;
   border-right: none;
-  background: rgba(20, 20, 20, .2);
+  background: rgba(20, 20, 20, .8);
   color: white;
   outline: none;
 }
