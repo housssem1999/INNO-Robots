@@ -322,6 +322,14 @@ h3{
   background-repeat: no-repeat;
   border-radius: 40px;
 }
+.tout{
+  height: 100%;
+  background-image: url('../img/cahier2.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+}
 
 
 
